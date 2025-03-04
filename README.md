@@ -30,6 +30,11 @@ In your `config/webhook-client.php` file, you need to specify the appropriate cl
 
 3. Set the `WEBHOOK_CLIENT_SECRET` in the `.env` file. This secret must match the signing secret in the server application which runs on `laravel-webhook-server`.
 
+4. Publish the migration for webhook calls:
+    ```bash
+    php artisan vendor:publish --provider="Spatie\WebhookClient\WebhookClientServiceProvider" --tag="webhook-client-migrations"
+    ```
+
 ## Webhook Processing
 
 This application uses the [laravel-webhook-client](https://github.com/spatie/laravel-webhook-client) package to process webhook calls from the server application. The payload can be viewed in the `laravel.log` file.
