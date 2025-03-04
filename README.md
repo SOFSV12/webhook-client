@@ -19,8 +19,7 @@ In your `config/webhook-client.php` file, you need to specify the appropriate cl
 
 1. Clone the repository:
     ```bash
-    git clone <repository-url>
-    cd <repository-directory>
+    git clone https://github.com/SOFSV12/webhook-client
     ```
 
 2. Install the dependencies:
